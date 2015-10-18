@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+body {
+  font-family: "Press Start 2P";
+  background-color: #000;
+  color: #0b0;
+  font-size: 0.8em;
+}
+
+@keyframes blinker {  
+  0% { visibility: visible; }
+  50% { visibility: hidden; }
+  100% { visibility: visible; }
+}
+.cursor {
+  animation: blinker steps(1) 1s infinite;
+  display: inline;
+}
+
+.secret-input {
+  background: none;
+  border: 0;
+  font-family: "Press Start 2P";
+  color: #0b0;
+}
